@@ -1,12 +1,14 @@
 package org.gitlab.api.models;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class GitlabIssue {
+public class GitlabIssue implements Serializable {
+	private static final long serialVersionUID = 3702039679760251823L;
 
-    public enum Action {
+	public enum Action {
         LEAVE, CLOSE, REOPEN
     }
 

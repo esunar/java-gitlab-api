@@ -1,12 +1,14 @@
 package org.gitlab.api.models;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class GitlabMilestone {
+public class GitlabMilestone implements Serializable {
+	private static final long serialVersionUID = 5095757564583652335L;
 
-    public static final String URL = "/milestones";
+	public static final String URL = "/milestones";
 
     private int id;
 

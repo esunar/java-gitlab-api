@@ -1,10 +1,13 @@
 package org.gitlab.api.models;
 
+import java.io.Serializable;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class GitlabPermission {
+public class GitlabPermission implements Serializable {
+	private static final long serialVersionUID = -1086224979224469896L;
 
-    @JsonProperty("project_access")
+	@JsonProperty("project_access")
     private GitlabProjectAccessLevel projectAccess;
 
     @JsonProperty("group_access")

@@ -1,13 +1,15 @@
 package org.gitlab.api.models;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class GitlabProject {
+public class GitlabProject implements Serializable {
+	private static final long serialVersionUID = -4623863053279961456L;
 
-    public static final String URL = "/projects";
+	public static final String URL = "/projects";
 
     private Integer id;
     private String name;

@@ -1,10 +1,13 @@
 package org.gitlab.api.models;
 
+import java.io.Serializable;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class GitlabGroup {
+public class GitlabGroup implements Serializable {
+	private static final long serialVersionUID = -8058114138768948567L;
 
-    public static final String URL = "/groups";
+	public static final String URL = "/groups";
 
     private Integer id;
     private String name;

@@ -1,6 +1,10 @@
 package org.gitlab.api.models;
 
-public class GitlabRepositoryTree {
+import java.io.Serializable;
+
+public class GitlabRepositoryTree implements Serializable {
+	private static final long serialVersionUID = -8551482689431928827L;
+
 	public static String URL = "/tree";
 
 	private String name;

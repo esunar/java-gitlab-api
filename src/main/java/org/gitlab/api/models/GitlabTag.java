@@ -1,12 +1,15 @@
 package org.gitlab.api.models;
 
+import java.io.Serializable;
+
 import org.gitlab.api.models.GitlabBranchCommit;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class GitlabTag {
+public class GitlabTag implements Serializable {
+	private static final long serialVersionUID = -1908682075954149122L;
 
-    public final static String URL = "/repository/tags/";
+	public final static String URL = "/repository/tags/";
 
     @JsonProperty("commit")
     private GitlabBranchCommit commit;

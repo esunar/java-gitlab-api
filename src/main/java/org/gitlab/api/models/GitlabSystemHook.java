@@ -2,11 +2,13 @@ package org.gitlab.api.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class GitlabSystemHook {
+public class GitlabSystemHook implements Serializable {
+	private static final long serialVersionUID = -8646889659760458334L;
 
-    public final static String URL = "/hooks";
+	public final static String URL = "/hooks";
 
     private Integer id;
     private String url;

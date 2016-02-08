@@ -1,11 +1,14 @@
 package org.gitlab.api.models;
 
+import java.io.Serializable;
+
 /**
  * Models a Gitlab label.
  */
-public class GitlabLabel {
+public class GitlabLabel implements Serializable {
+	private static final long serialVersionUID = 7351801108073853056L;
 
-    public static final String URL = "/labels";
+	public static final String URL = "/labels";
 
     private String name;
     private String color;

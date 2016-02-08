@@ -1,8 +1,11 @@
 package org.gitlab.api.models;
 
+import java.io.Serializable;
 
-public class GitlabSSHKey {
-    public static String KEYS_URL = "/keys";
+public class GitlabSSHKey implements Serializable {
+	private static final long serialVersionUID = 1936758720357473262L;
+
+	public static String KEYS_URL = "/keys";
 
     private Integer _id;
     private String _title;

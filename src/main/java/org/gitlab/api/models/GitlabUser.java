@@ -1,11 +1,13 @@
 package org.gitlab.api.models;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class GitlabUser {
-    public static String URL = "/users";
+public class GitlabUser implements Serializable {
+	private static final long serialVersionUID = -7179812338860587654L;
+	public static String URL = "/users";
     public static String USERS_URL = "/users";
     public static String USER_URL = "/user"; // for sudo based ops
     public static String BLOCK_URL = "/block";

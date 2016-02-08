@@ -2,11 +2,13 @@ package org.gitlab.api.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class GitlabCommitStatus {
+public class GitlabCommitStatus implements Serializable {
+	private static final long serialVersionUID = -60471296852156150L;
 
-    public final static String URL = "/statuses";
+	public final static String URL = "/statuses";
 
     private String id;
     private String sha;

@@ -1,13 +1,15 @@
 package org.gitlab.api.models;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class GitlabCommit {
+public class GitlabCommit implements Serializable {
+	private static final long serialVersionUID = -9189028455469988620L;
 
-    public final static String URL = "/commits";
+	public final static String URL = "/commits";
 
     private String id;
     private String title;

@@ -1,8 +1,11 @@
 package org.gitlab.api.models;
 
+import java.io.Serializable;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class CommitComment {
+public class CommitComment implements Serializable {
+	private static final long serialVersionUID = 1624493427106007093L;
 
 	public static final String URL = "/comments";
 

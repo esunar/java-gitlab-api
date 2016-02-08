@@ -1,9 +1,13 @@
 package org.gitlab.api.models;
 
+import java.io.Serializable;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class GitlabBranch {
-    public final static String URL = "/repository/branches/";
+public class GitlabBranch implements Serializable {
+	private static final long serialVersionUID = -6804831939616265893L;
+
+	public final static String URL = "/repository/branches/";
 
     @JsonProperty("name")
     private String name;

@@ -1,11 +1,14 @@
 package org.gitlab.api.models;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class GitlabNamespace {
-    public static final String URL = "/groups";
+public class GitlabNamespace implements Serializable {
+	private static final long serialVersionUID = -7591217881903618018L;
+
+	public static final String URL = "/groups";
 
     private Integer id;
     private String name;

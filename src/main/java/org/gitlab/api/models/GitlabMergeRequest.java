@@ -1,12 +1,15 @@
 package org.gitlab.api.models;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class GitlabMergeRequest {
-    public static final String URL = "/merge_requests";
+public class GitlabMergeRequest implements Serializable{
+	private static final long serialVersionUID = -236004310534290156L;
+
+	public static final String URL = "/merge_requests";
 
     private Integer id;
     private Integer iid;
